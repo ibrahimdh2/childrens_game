@@ -1,0 +1,61 @@
+{ "skeleton": { "images": "E:/Childrens Game Assets/farm props/" },
+"PhotoshopToSpine": { "scale": 1, "padding": 1, "trim": true },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "BG Animals", "bone": "root", "attachment": "BG Animals" },
+	{ "name": "Sheep", "bone": "root", "attachment": "Sheep" },
+	{ "name": "Pig", "bone": "root", "attachment": "Pig" },
+	{ "name": "Hen", "bone": "root", "attachment": "Hen" },
+	{ "name": "chick", "bone": "root", "attachment": "chick" },
+	{ "name": "Rooster", "bone": "root", "attachment": "Rooster" },
+	{ "name": "Cat", "bone": "root", "attachment": "Cat" },
+	{ "name": "Dog", "bone": "root", "attachment": "Dog" },
+	{ "name": "duckling", "bone": "root", "attachment": "duckling" },
+	{ "name": "duck", "bone": "root", "attachment": "duck" },
+	{ "name": "horse", "bone": "root", "attachment": "horse" },
+	{ "name": "cow", "bone": "root", "attachment": "cow" }
+],
+"skins": {
+	"default": {
+		"BG Animals": {
+			"BG Animals": { "x": 703, "y": -1597, "width": 556, "height": 232 }
+		},
+		"Sheep": {
+			"Sheep": { "x": 1388, "y": -1454, "width": 324, "height": 294 }
+		},
+		"Pig": {
+			"Pig": { "x": 1526.5, "y": -1748.5, "width": 299, "height": 243 }
+		},
+		"Hen": {
+			"Hen": { "x": 1126, "y": -1522.5, "width": 116, "height": 155 }
+		},
+		"chick": {
+			"chick": { "x": 1009, "y": -1535.5, "width": 48, "height": 51 }
+		},
+		"Rooster": {
+			"Rooster": { "x": 722.5, "y": -1454, "width": 155, "height": 164 }
+		},
+		"Cat": {
+			"Cat": { "x": 469.5, "y": -1399.5, "width": 135, "height": 143 }
+		},
+		"Dog": {
+			"Dog": { "x": 1023, "y": -1817, "width": 322, "height": 298 }
+		},
+		"duckling": {
+			"duckling": { "x": 884, "y": -1521.5, "width": 82, "height": 105 }
+		},
+		"duck": {
+			"duck": { "x": 612.5, "y": -1653, "width": 197, "height": 192 }
+		},
+		"horse": {
+			"horse": { "x": 1832, "y": -1056.5, "width": 218, "height": 247 }
+		},
+		"cow": {
+			"cow": { "x": 1277, "y": -704.5, "width": 580, "height": 431 }
+		}
+	}
+},
+"animations": { "animation": {} }
+}
