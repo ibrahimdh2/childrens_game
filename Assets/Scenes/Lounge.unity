@@ -1226,7 +1226,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   background: {fileID: 925729207}
   fullBG: {fileID: 1102689532}
-  offSet: 0.3
+  offSet: 1
+  tabThreshold: 8
 --- !u!1 &617278197
 GameObject:
   m_ObjectHideFlags: 0
@@ -4720,7 +4721,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -302.424, y: -325.875}
+  m_AnchoredPosition: {x: -302.415, y: -325.932}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3201279153310337046

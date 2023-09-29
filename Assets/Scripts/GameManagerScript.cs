@@ -9,6 +9,7 @@ public class GameManagerScript : MonoBehaviour
     public Slider slider;
     public static GameManagerScript instance;
     public float sliderValue;
+    public Canvas inGameUICanvas;
     
 
 
@@ -24,14 +25,22 @@ public class GameManagerScript : MonoBehaviour
             instance = this;
         }
         DontDestroyOnLoad(this);
+        
     }
-
+    
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
+
+       
+        if (SceneManager.GetActiveScene().name != "Menu")
         {
-            SceneManager.LoadScene(0);
+
+            inGameUICanvas.enabled = true;
+        }
+        else
+        {
+            inGameUICanvas.enabled = false;
         }
     }
     private IEnumerator LoadSceneCoroutine(int sceneName)
@@ -50,6 +59,7 @@ public class GameManagerScript : MonoBehaviour
     }
     public void LoadScene(int sceneName)
     {
+        
         StartCoroutine(LoadSceneCoroutine(sceneName));
     }
     public void LoadFarmScene()
@@ -60,12 +70,8 @@ public class GameManagerScript : MonoBehaviour
     {
         LoadScene(2);
     }
-    public void LoadBedroomScene()
+    public void LoadMenu()
     {
-        SceneManager.LoadScene(1);
-    }
-    public void LoadClassroomScene()
-    {
-        SceneManager.LoadScene(2);
+        LoadScene(0);
     }
 }
