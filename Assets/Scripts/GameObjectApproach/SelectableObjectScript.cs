@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using TMPro;
 
 /// <summary>
@@ -14,7 +15,6 @@ public class SelectableObjectScript : MonoBehaviour
    
     [Tooltip("The text that will be displayed on screen when the object is selected")]
     public string objectName; //this is the display name of the object
-    public AudioSource nameSound; // this will be played when the object is selected
     public TextMeshProUGUI UINameText;
 
 
@@ -40,6 +40,10 @@ public class SelectableObjectScript : MonoBehaviour
     public float popEndTime;
     public bool startTimeRegistered;
 
+    public AudioManagerScript audioManager;
+
+    [Tooltip("To calibrate match audioIndex variable with the index of the audio in the Audiomanager array")]
+    public int audioIndex; 
 
     
 
@@ -112,10 +116,9 @@ public class SelectableObjectScript : MonoBehaviour
     /// </summary>
     public void OnSelected()
     {
-        if (nameSound != null)
-        {
-            nameSound.Play();
-        }
+
+        audioManager.PlayAudio(audioIndex);
+        
         spriteRenderer.material = outlineMaterial;
         spriteRenderer.sortingOrder = initialSortOrder + 2;
         unpop = false;

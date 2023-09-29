@@ -25,21 +25,21 @@ public class AspectRatioManagerScript : MonoBehaviour
     void Update()
     {
 
-        //if (Input.GetMouseButton(0))
-        //{
-        //    Debug.Log($"Screen Height {Screen.height}: Screen Width {Screen.width} Aspect Ratio {Screen.width/ Screen.height} Ratio2 {Screen.width/ Screen.height}");
-        //    Debug.Log($"Height Inches {Screen.height/Screen.dpi} Width Inches {Screen.width/Screen.dpi}  inches ratio h/w{(Screen.height / Screen.dpi)/ (Screen.width / Screen.dpi)}  inches ratio w/h{(Screen.width / Screen.dpi)/ (Screen.height / Screen.dpi)}" );
-        //    ChangeOrthographicSize(offSet);
-        //    if (IsTablet(tabThreshold))
-        //    {
-        //        Debug.Log("Is a tab");
-        //    }
-        //    else
-        //    {
-        //        Debug.Log("Is a phone");
-        //    }
-        //}
-        
+        if (Input.GetMouseButton(0))
+        {
+            Debug.Log($"Screen Height {Screen.height}: Screen Width {Screen.width} Aspect Ratio {Screen.width / Screen.height} Ratio2 {Screen.width / Screen.height}");
+            Debug.Log($"Height Inches {Screen.height / Screen.dpi} Width Inches {Screen.width / Screen.dpi}  inches ratio h/w{(Screen.height / Screen.dpi) / (Screen.width / Screen.dpi)}  inches ratio w/h{(Screen.width / Screen.dpi) / (Screen.height / Screen.dpi)}");
+            ChangeOrthographicSize(offSet);
+            if (IsTablet(tabThreshold))
+            {
+                Debug.Log("Is a tab");
+            }
+            else
+            {
+                Debug.Log("Is a phone");
+            }
+        }
+
     }
     public void ChangeOrthographicSize(float offSet)
     {

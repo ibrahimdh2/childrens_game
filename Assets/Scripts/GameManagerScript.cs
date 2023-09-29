@@ -18,24 +18,22 @@ public class GameManagerScript : MonoBehaviour
     {
         if (instance != null && instance != this)
         {
-            Destroy(instance);
+            Destroy(instance.gameObject);
         }
-        else
-        {
-            instance = this;
-        }
-        DontDestroyOnLoad(this);
+        DontDestroyOnLoad(this.gameObject);
+        
+       
         
     }
     
     // Update is called once per frame
     void Update()
     {
-
        
+
         if (SceneManager.GetActiveScene().name != "Menu")
         {
-
+           
             inGameUICanvas.enabled = true;
         }
         else
