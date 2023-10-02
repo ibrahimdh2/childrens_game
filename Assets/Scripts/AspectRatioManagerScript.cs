@@ -24,6 +24,7 @@ public class AspectRatioManagerScript : MonoBehaviour
     //for debugging remove after debugging (the whole update)
     void Update()
     {
+        
 
         if (Input.GetMouseButton(0))
         {
