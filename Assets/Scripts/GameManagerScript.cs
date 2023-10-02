@@ -68,6 +68,10 @@ public class GameManagerScript : MonoBehaviour
     {
         LoadScene(2);
     }
+    public void LoadCampsideScene()
+    {
+        LoadScene(3);
+    }
     public void LoadMenu()
     {
         LoadScene(0);

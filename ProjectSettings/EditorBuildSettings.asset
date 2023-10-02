@@ -14,6 +14,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lounge.unity
     guid: 98f5fdeceed6f0f4f917889bcc276817
+  - enabled: 1
+    path: Assets/Scenes/Campside.unity
+    guid: 3b838cd2a79fefc45ab0770ccca06221
   - enabled: 0
     path: Assets/Scenes/Bedroom.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
